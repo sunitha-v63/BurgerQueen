@@ -1,11 +1,8 @@
 import "../Assets/Css/Admin.css";
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 function Register() {
-  // let navigate = useNavigate();
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,16 +14,15 @@ function Register() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
-        ...formData,
-        [name]: value,
-      });
-    
-      // Clear the error for this field as user types
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        [name]: '', 
-      }));
-    };
+      ...formData,
+      [name]: value,
+    });
+
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: "",
+    }));
+  };
 
   const validate = () => {
     let tempErrors = {};
@@ -54,17 +50,22 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     if (validate()) {
+      const existingUser = JSON.parse(localStorage.getItem("userData"));
+
+      if (existingUser && existingUser.email === formData.email) {
+        setErrors({ email: "User with this email already exists" });
+        return;
+      }
+
       console.log("Form submitted:", formData);
-  
-      // ✅ Save to local storage
-      localStorage.setItem('userData', JSON.stringify(formData));
-  
-      // Optional: Show success message or redirect
-  
-      // Reset form
-      setFormData({ name: '', email: '', password: '' });
+
+   
+      localStorage.setItem("userData", JSON.stringify(formData));
+      alert("Registration successful!");
+
+      setFormData({ name: "", email: "", password: "" });
     }
   };
 
@@ -72,7 +73,7 @@ function Register() {
     <>
       <div className="container-fluid">
         <div className="row login-page  d-flex">
-          {/* Left Panel */}
+          {/* Left */}
           <div className="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-white left-panel text-center p-5">
             <h2 className="text-black">Register</h2>
             <h2 className="col-sm-12 responsive-heading">
@@ -80,7 +81,7 @@ function Register() {
             </h2>
           </div>
 
-          {/* Right Panel */}
+          {/* Right */}
           <div className="col-lg-6 right-panel p-5">
             <div>
               <h6 className="text-center fs-5">
@@ -129,12 +130,14 @@ function Register() {
                   <span style={{ color: "red" }}>{errors.password}</span>
                 )}
               </div>
+              <div className="d-flex justify-content-end mb-3">
+                <NavLink to="/admin" className="text-black me-2">
+                  Login
+                </NavLink>
+              </div>
               <button type="submit" className="btn btn-primary w-100 mt-3 fs-5">
-            
                 Submit
               </button>
-
-              {/* <button onClick={() => navigate("/about")}>Navigate</button> */}
             </form>
           </div>
         </div>

@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "../Assets/Css/Admin.css";
 import { NavLink } from "react-router-dom";
 
-
 function Admin() {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,7 +22,7 @@ function Admin() {
       ...prevErrors,
       [name]: "",
     }));
-    setErrors(""); // clear login error when typing
+    setErrors("");
   };
 
   const validate = () => {
@@ -60,16 +58,16 @@ function Admin() {
       formData.password === storedUser.password
     ) {
       alert("Login successful!");
-      // Navigate to dashboard or next page
     } else {
-      setErrors("Invalid email or password");
+      setErrors({ login: "Invalid email or password" });
     }
+    setFormData({ name: "", email: "", password: "" });
   };
   return (
     <>
       <div className="container-fluid">
         <div className="row login-page  d-flex">
-          {/* Left Panel */}
+          {/* Left */}
           <div className="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-white left-panel text-center p-5">
             <h2 className="text-black">Welcome to</h2>
             <h2 className="col-sm-12 responsive-heading">
@@ -77,7 +75,7 @@ function Admin() {
             </h2>
           </div>
 
-          {/* Right Panel */}
+          {/* Right */}
           <div className="col-lg-6 right-panel p-5">
             <h4>Hello !</h4>
             <h5 className="text-primary rpanel">Good Morning</h5>
@@ -87,7 +85,7 @@ function Admin() {
               </h6>
             </div>
             <form onSubmit={handleSubmit} className="form">
-            <div className="form-group mb-5">
+              <div className="form-group mb-5">
                 <input
                   type="email"
                   placeholder="Email address"
@@ -116,10 +114,15 @@ function Admin() {
               </div>
 
               <div className="d-flex justify-content-end mb-3">
-              <NavLink to="/register">Forgot Password</NavLink>
-           
+                <NavLink to="/forgotpassword" className="text-danger me-2">
+                  Forgot Password
+                </NavLink>
+                /
+                <NavLink to="/register" className="text-black me-2">
+                  Register
+                </NavLink>
               </div>
-              
+
               <button className="btn btn-primary w-100">Log in</button>
             </form>
           </div>
