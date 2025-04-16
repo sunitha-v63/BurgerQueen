@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/BurgerQueen/static/css/main.33adbd88.css",
-    "main.js": "/BurgerQueen/static/js/main.fa976695.js",
+    "main.js": "/BurgerQueen/static/js/main.64c14f28.js",
     "static/js/453.d71f3fc1.chunk.js": "/BurgerQueen/static/js/453.d71f3fc1.chunk.js",
     "static/media/img-1.png": "/BurgerQueen/static/media/img-1.6e102c902581db67c0ff.png",
     "static/media/bg.png": "/BurgerQueen/static/media/bg.c6310195209bb03a0016.png",
     "index.html": "/BurgerQueen/index.html",
     "main.33adbd88.css.map": "/BurgerQueen/static/css/main.33adbd88.css.map",
-    "main.fa976695.js.map": "/BurgerQueen/static/js/main.fa976695.js.map",
+    "main.64c14f28.js.map": "/BurgerQueen/static/js/main.64c14f28.js.map",
     "453.d71f3fc1.chunk.js.map": "/BurgerQueen/static/js/453.d71f3fc1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33adbd88.css",
-    "static/js/main.fa976695.js"
+    "static/js/main.64c14f28.js"
   ]
 }
