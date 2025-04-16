@@ -22,7 +22,7 @@ function Login() {
         justifyContent: "space-between",
       }}
     >
-      {/* Top Navbar */}
+      {/* Top */}
       <div className="container py-3">
         <div className="row align-items-center my-4">
           <div className="col-12 col-sm-4 text-center text-sm-start small">
