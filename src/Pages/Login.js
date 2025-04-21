@@ -16,7 +16,7 @@ function Login() {
         backgroundImage: `url(${bgimg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh",
+        minHeight: "70vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -41,7 +41,7 @@ function Login() {
           <div className="col-12 col-sm-4 text-center text-sm-end">
             <button
               className="btn btn-dark px-4 py-2 fs-5 mt-2 mt-sm-0"
-              style={{ textShadow: "none" }}
+              style={{ textShadow: "none" }} onClick={() => navigate("/spotbooking")}
             >
               Reservation
             </button>
@@ -59,7 +59,7 @@ function Login() {
                 whiteSpace: "nowrap",
                 fontWeight: 400,
                 textShadow: "none",
-                color: "red",
+                color: "#E01616",
               }}
             >
               The pure taste of
@@ -104,7 +104,7 @@ function Login() {
       {/* Footer */}
       <div className="container-fluid bg-black text-white py-4">
         <div className="row align-items-center">
-          <div className="col-12 col-md-6 text-center text-md-start fs-4 mb-2 mb-md-0" style={{ paddingLeft: "70px" }}>
+          <div className="col-12 col-sm-12 col-md-6 text-center text-md-start fs-4 mb-2 mb-md-0" style={{ paddingLeft: "30px" }}>
             +91 987654321
           </div>
           <div className="col-12 col-md-6 text-center text-md-end" style={{ paddingRight: "20px" }}>

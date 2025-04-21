@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Assets/Css/Admin.css";
-import { NavLink } from "react-router-dom";
+import { NavLink ,useNavigate } from "react-router-dom";
 
 function Admin() {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ function Admin() {
   });
 
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -58,6 +59,7 @@ function Admin() {
       formData.password === storedUser.password
     ) {
       alert("Login successful!");
+      navigate("/home");
     } else {
       setErrors({ login: "Invalid email or password" });
     }
@@ -65,7 +67,7 @@ function Admin() {
   };
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid admin">
         <div className="row login-page  d-flex">
           {/* Left */}
           <div className="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-white left-panel text-center p-5">

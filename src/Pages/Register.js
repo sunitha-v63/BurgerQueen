@@ -71,7 +71,7 @@ function Register() {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid admin">
         <div className="row login-page  d-flex">
           {/* Left */}
           <div className="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-white left-panel text-center p-5">
