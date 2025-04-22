@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/BurgerQueen/static/css/main.cb79b851.css",
-    "main.js": "/BurgerQueen/static/js/main.94e5e8d8.js",
+    "main.css": "/BurgerQueen/static/css/main.a04bf656.css",
+    "main.js": "/BurgerQueen/static/js/main.47922582.js",
     "static/js/453.9b1f0f11.chunk.js": "/BurgerQueen/static/js/453.9b1f0f11.chunk.js",
     "static/media/book-5.png": "/BurgerQueen/static/media/book-5.803f771075a041549f11.png",
     "static/media/img-4.png": "/BurgerQueen/static/media/img-4.c53b61a0e500facbc4cc.png",
     "static/media/img-3.png": "/BurgerQueen/static/media/img-3.0a65711b430aa74f7c7b.png",
     "static/media/img-5.png": "/BurgerQueen/static/media/img-5.4a8e6e221791b01e3cb3.png",
+    "static/media/img-6.png": "/BurgerQueen/static/media/img-6.866c908ec0f2d49245e9.png",
     "static/media/img-2.png": "/BurgerQueen/static/media/img-2.21ed4b0aabf50b3e72ce.png",
     "static/media/img-1.png": "/BurgerQueen/static/media/img-1.6e102c902581db67c0ff.png",
     "static/media/bg.png": "/BurgerQueen/static/media/bg.c6310195209bb03a0016.png",
@@ -44,12 +45,12 @@
     "static/media/food-6.png": "/BurgerQueen/static/media/food-6.72db7f6da9e91239f8d9.png",
     "static/media/food-7.png": "/BurgerQueen/static/media/food-7.41cfb4efa95ddb1073e2.png",
     "index.html": "/BurgerQueen/index.html",
-    "main.cb79b851.css.map": "/BurgerQueen/static/css/main.cb79b851.css.map",
-    "main.94e5e8d8.js.map": "/BurgerQueen/static/js/main.94e5e8d8.js.map",
+    "main.a04bf656.css.map": "/BurgerQueen/static/css/main.a04bf656.css.map",
+    "main.47922582.js.map": "/BurgerQueen/static/js/main.47922582.js.map",
     "453.9b1f0f11.chunk.js.map": "/BurgerQueen/static/js/453.9b1f0f11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb79b851.css",
-    "static/js/main.94e5e8d8.js"
+    "static/css/main.a04bf656.css",
+    "static/js/main.47922582.js"
   ]
 }
