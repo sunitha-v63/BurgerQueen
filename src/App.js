@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Home/>
         <BgImageProvider>
           <Routes>
             <Route path="/" element={<Login />} />

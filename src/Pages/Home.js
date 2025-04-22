@@ -79,8 +79,8 @@ function Home() {
                   className="card-img-top img-fluid"
                   alt="img"
                   style={{
-                    width: "300px",
-                    height: "300px",
+                    width: "250px",
+                    height: "250px",
                     objectFit: "cover",
                     borderRadius: "50%",
                   }}
@@ -124,8 +124,8 @@ function Home() {
                 className="card-img-top img-fluid"
                 alt="img"
                 style={{
-                  width: "300px",
-                  height: "300px",
+                  width: "250px",
+                  height: "250px",
                   objectFit: "cover",
                   borderRadius: "50%",
                 }}
@@ -170,8 +170,8 @@ function Home() {
                   className="card-img-top img-fluid"
                   alt="img"
                   style={{
-                    width: "300px",
-                    height: "300px",
+                    width: "250px",
+                    height: "250px",
                     objectFit: "cover",
                     borderRadius: "50%",
                   }}
