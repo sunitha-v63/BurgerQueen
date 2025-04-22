@@ -17,9 +17,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <>
-      {/* container1 */}
-
-      <div className="container bg-black py-5">
+     <div className="container bg-black py-5">
         <div className="row g-0 min-vh-100 align-items-center py-2">
           {/* Left */}
           <div className="col-sm-6 col-md-6 p-0 textimage">
