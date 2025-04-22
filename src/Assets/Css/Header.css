@@ -12,23 +12,29 @@
 body {
   background-color: #000;
 }
-.hero-section {
+.headersection {
   min-height: 60vh;
 }
-.hero-section h1 {
+.headersection h1 {
   font-size: 160px;
 }
 
-@media (max-width: 768px) {
-  .hero-section h1 {
+@media (min-width: 320px) and (max-width:767px){
+  .headersection h1 {
     font-size: 50px;
   }
 
-  .hero-section p {
+  .headersection p {
     font-size: 18px;
   }
   .container1 {
     margin-top: -10% !important;
   }
 
+}
+@media(min-width:768px) and (max-width:1023px)
+{
+  .container1 {
+    margin-top: -5% !important;
+  }
 }

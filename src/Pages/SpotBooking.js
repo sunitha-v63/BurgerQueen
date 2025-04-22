@@ -6,8 +6,12 @@ import book3 from "../Assets/Image/book-3.png";
 import book4 from "../Assets/Image/book-4.png";
 import book5 from "../Assets/Image/book-5.png";
 import { useNavigate } from "react-router-dom";
+import { useBgImage } from "../Components/BgImageContext "; // correct path
+import img6 from "../Assets/Image/img-6.png"; // your new background image
+
 function SpotBooking() {
   const navigate = useNavigate();
+  const { setBgImage } = useBgImage();
   return (
     <>
       <div className="container bg-black text-white py-5">
@@ -86,7 +90,12 @@ function SpotBooking() {
         <div className="row align-items-center bg-black text-white p-4 rounded-4">
           {/* left */}
           <div className="col-md-4 mb-3 mb-md-0">
-            <img src={book1} alt="img" className="img-fluid rounded-3" style={{ maxHeight: "500px", objectFit: "cover" }}/>
+            <img
+              src={book1}
+              alt="img"
+              className="img-fluid rounded-3"
+              style={{ maxHeight: "500px", objectFit: "cover" }}
+            />
           </div>
 
           {/* Right */}
@@ -101,13 +110,23 @@ function SpotBooking() {
               curated combos, designed to offer the perfect balance of flavors
               in one convenient meal. Each combo brings together a variety of
               dishes that complement each other, from savory appetizers to
-              hearty main courses and delightful sides.Whether you're craving a classic comfort meal or something with an adventurous twist,
+              hearty main courses and delightful sides.Whether you're craving a
+              classic comfort meal or something with an adventurous twist,
             </p>
             <div className="d-flex justify-content-between align-items-center mb-2">
-            <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>For couples</p>
-            <button className="btn px-4 fw-semibold text-black fs-4" style={{ backgroundColor: "#F8D49E" }} onClick={() => navigate("/book")}>
-              Book a spot
-            </button>
+              <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>
+                For couples
+              </p>
+              <button
+                className="btn px-4 fw-semibold text-black fs-4"
+                style={{ backgroundColor: "#F8D49E" }}
+                onClick={() => {
+                  setBgImage(img6);
+                  navigate("/book");
+                }}
+              >
+                Book a spot
+              </button>
             </div>
           </div>
         </div>
@@ -117,7 +136,12 @@ function SpotBooking() {
         <div className="row align-items-center bg-black text-white p-4 rounded-4">
           {/* left */}
           <div className="col-md-4 mb-3 mb-md-0">
-            <img src={book2} alt="img" className="img-fluid rounded-3" style={{ maxHeight: "500px", objectFit: "cover" }}/>
+            <img
+              src={book2}
+              alt="img"
+              className="img-fluid rounded-3"
+              style={{ maxHeight: "500px", objectFit: "cover" }}
+            />
           </div>
 
           {/* Right */}
@@ -132,23 +156,38 @@ function SpotBooking() {
               curated combos, designed to offer the perfect balance of flavors
               in one convenient meal. Each combo brings together a variety of
               dishes that complement each other, from savory appetizers to
-              hearty main courses and delightful sides.Whether you're craving a classic comfort meal or something with an adventurous twist,
+              hearty main courses and delightful sides.Whether you're craving a
+              classic comfort meal or something with an adventurous twist,
             </p>
             <div className="d-flex justify-content-between align-items-center mb-2">
-            <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>For couples</p>
-            <button className="btn px-4 fw-semibold text-black fs-4" style={{ backgroundColor: "#F8D49E" }} onClick={() => navigate("/book")}>
-              Book a spot
-            </button>
+              <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>
+                For couples
+              </p>
+              <button
+                className="btn px-4 fw-semibold text-black fs-4"
+                style={{ backgroundColor: "#F8D49E" }}
+                onClick={() => {
+                  setBgImage(img6);
+                  navigate("/book");
+                }}
+              >
+                Book a spot
+              </button>
             </div>
           </div>
         </div>
       </div>
-       {/* container4 */}
-       <div className="container my-5">
+      {/* container4 */}
+      <div className="container my-5">
         <div className="row align-items-center bg-black text-white p-4 rounded-4">
           {/* left */}
           <div className="col-md-4 mb-3 mb-md-0">
-            <img src={book3} alt="img" className="img-fluid rounded-3" style={{ maxHeight: "500px", objectFit: "cover" }}/>
+            <img
+              src={book3}
+              alt="img"
+              className="img-fluid rounded-3"
+              style={{ maxHeight: "500px", objectFit: "cover" }}
+            />
           </div>
 
           {/* Right */}
@@ -163,23 +202,38 @@ function SpotBooking() {
               curated combos, designed to offer the perfect balance of flavors
               in one convenient meal. Each combo brings together a variety of
               dishes that complement each other, from savory appetizers to
-              hearty main courses and delightful sides.Whether you're craving a classic comfort meal or something with an adventurous twist,
+              hearty main courses and delightful sides.Whether you're craving a
+              classic comfort meal or something with an adventurous twist,
             </p>
             <div className="d-flex justify-content-between align-items-center mb-2">
-            <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>For couples</p>
-            <button className="btn px-4 fw-semibold text-black fs-4" style={{ backgroundColor: "#F8D49E" }} onClick={() => navigate("/book")}>
-              Book a spot
-            </button>
+              <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>
+                For couples
+              </p>
+              <button
+                className="btn px-4 fw-semibold text-black fs-4"
+                style={{ backgroundColor: "#F8D49E" }}
+                onClick={() => {
+                  setBgImage(img6);
+                  navigate("/book");
+                }}
+              >
+                Book a spot
+              </button>
             </div>
           </div>
         </div>
       </div>
-       {/* container5 */}
-       <div className="container my-5">
+      {/* container5 */}
+      <div className="container my-5">
         <div className="row align-items-center bg-black text-white p-4 rounded-4">
           {/* left */}
           <div className="col-md-4 mb-3 mb-md-0">
-            <img src={book4} alt="Kitchen" className="img-fluid rounded-3" style={{ maxHeight: "500px", objectFit: "cover" }}/>
+            <img
+              src={book4}
+              alt="Kitchen"
+              className="img-fluid rounded-3"
+              style={{ maxHeight: "500px", objectFit: "cover" }}
+            />
           </div>
 
           {/* Right */}
@@ -194,22 +248,30 @@ function SpotBooking() {
               curated combos, designed to offer the perfect balance of flavors
               in one convenient meal. Each combo brings together a variety of
               dishes that complement each other, from savory appetizers to
-              hearty main courses and delightful sides.Whether you're craving a classic comfort meal or something with an adventurous twist,
+              hearty main courses and delightful sides.Whether you're craving a
+              classic comfort meal or something with an adventurous twist,
             </p>
             <div className="d-flex justify-content-between align-items-center mb-2">
-            <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>For couples</p>
-            <button className="btn px-4 fw-semibold text-black fs-4" style={{ backgroundColor: "#F8D49E" }} onClick={() => navigate("/book")}>
-              Book a spot
-            </button>
+              <p className="fw-semibold fs-1" style={{ color: "#F8D49E" }}>
+                For couples
+              </p>
+              <button
+                className="btn px-4 fw-semibold text-black fs-4"
+                style={{ backgroundColor: "#F8D49E" }}
+                onClick={() => {
+                  setBgImage(img6);
+                  navigate("/book");
+                }}
+              >
+                Book a spot
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div className="container-fluid bg-black text-white py-5">
-      <img src={book5} alt="Kitchen" className="img-fluid rounded-3"></img>
+        <img src={book5} alt="Kitchen" className="img-fluid rounded-3"></img>
       </div>
-
-      
     </>
   );
 }

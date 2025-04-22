@@ -3,18 +3,18 @@ import "../Assets/Css/Header.css";
 import Logoimage from "../Assets/Image/logo.png";
 import { NavLink } from "react-router-dom";
 import "../Assets/Css/Nav.css";
-import { useState } from "react";
+import { useBgImage } from "../Components/BgImageContext ";
 import img2 from "../Assets/Image/img-2.png";
 import img3 from "../Assets/Image/img-3.png";
 import img4 from "../Assets/Image/img-4.png";
 import img5 from "../Assets/Image/img-5.png";
 
 function Header() {
-  const [bgImage, setBgImage] = useState(img2);
+  const { bgImage, setBgImage } = useBgImage();
   return (
     <>
       <div className="container-fluid  header">
-        <div className="hero-section text-white px-4">
+        <div className="headersection text-white px-4">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 d-flex align-items-center">
               <h5 className="fw-bold mb-0 ms-2">Burger Queen Restaurant</h5>
@@ -51,7 +51,7 @@ function Header() {
         </div>
       </div>
       {/* container1 */}
-      <div className="container-fluid container1">
+      <div className="container container1">
         <div
           className="text-white navheader"
           style={{ backgroundImage: `url(${bgImage})` }}
@@ -70,38 +70,35 @@ function Header() {
                 <span className="navbar-toggler-icon"></span>
               </button>
 
-              {/* Collapsible Menu */}
               <div
                 className="collapse navbar-collapse justify-content-center"
                 id="navbarNav"
               >
                 <div className="navbar-nav bg-dark-blur rounded-pill px-4 py-2">
-                  {/* <div className="navbar-nav bg-dark-blur rounded-0 rounded-md-pill px-4 py-2"> */}
-
                   <NavLink
                     to="/home"
-                    className="nav-link nav-pill"
+                    className="nav-link navlinks"
                     onClick={() => setBgImage(img2)}
                   >
                     Home
                   </NavLink>
                   <NavLink
                     to="/spotbooking"
-                    className="nav-link nav-pill"
+                    className="nav-link navlinks"
                     onClick={() => setBgImage(img3)}
                   >
                     Spot Booking
                   </NavLink>
                   <NavLink
                     to="/foodmenu"
-                    className="nav-link nav-pill"
+                    className="nav-link navlinks"
                     onClick={() => setBgImage(img4)}
                   >
                     Food Menu
                   </NavLink>
                   <NavLink
                     to="/about"
-                    className="nav-link nav-pill"
+                    className="nav-link navlinks"
                     onClick={() => setBgImage(img5)}
                   >
                     About

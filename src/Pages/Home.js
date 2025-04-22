@@ -18,37 +18,38 @@ function Home() {
   return (
     <>
       {/* container1 */}
-      
-      <div className="container bg-black py-5">
-      <div className="row g-0 min-vh-100 align-items-center py-2">
-        {/* Left */}
-        <div className="col-sm-6 col-md-6 p-0 textimage">
-          <img src={home1} alt="img" className="img-fluid" />
-        </div>
 
-        {/* Right */}
-        <div className="col-sm-6 col-md-6 bg-light p-5 textcontiner">
-          <h1 className="display-5 fw-bold">Excellent cook</h1>
-          <h4 className="mb-4">We got all country chefs</h4>
-          <p className="fs-5 mb-1" style={{ color: "rgb(102, 95, 95)" }}>
-            "Restaurant chefs are culinary artists who bring passion and
-            creativity to the kitchen. They meticulously prepare, cook, and
-            present a wide range of dishes, ensuring that every meal is crafted
-            to perfection. With an expert understanding of flavors, techniques,
-            and ingredients, chefs elevate the dining experience for guests."
-          </p>
-          <div className="d-flex justify-content-center">
-            <button
-              className="btn btn-dark px-4 py-2 mt-3 fs-4"
-              type="button"
-              onClick={() => navigate("/foodmenu")}
-            >
-              Explore food
-            </button>
+      <div className="container bg-black py-5">
+        <div className="row g-0 min-vh-100 align-items-center py-2">
+          {/* Left */}
+          <div className="col-sm-6 col-md-6 p-0 textimage">
+            <img src={home1} alt="img" className="img-fluid" />
+          </div>
+
+          {/* Right */}
+          <div className="col-sm-6 col-md-6 bg-light p-5 textcontiner">
+            <h1 className="display-5 fw-bold">Excellent cook</h1>
+            <h4 className="mb-4">We got all country chefs</h4>
+            <p className="fs-5 mb-1" style={{ color: "rgb(102, 95, 95)" }}>
+              "Restaurant chefs are culinary artists who bring passion and
+              creativity to the kitchen. They meticulously prepare, cook, and
+              present a wide range of dishes, ensuring that every meal is
+              crafted to perfection. With an expert understanding of flavors,
+              techniques, and ingredients, chefs elevate the dining experience
+              for guests."
+            </p>
+            <div className="d-flex justify-content-center">
+              <button
+                className="btn btn-dark px-4 py-2 mt-3 fs-4"
+                type="button"
+                onClick={() => navigate("/foodmenu")}
+              >
+                Explore food
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       {/* container2 */}
       <div className="container bg-black text-white py-5">
@@ -77,12 +78,13 @@ function Home() {
               <div className="d-flex align-items-center justify-content-center">
                 <img
                   src={card1}
-                  className="card-img-top img-fluid rounded-3"
+                  className="card-img-top img-fluid"
                   alt="img"
                   style={{
-                    maxHeight: "300px",
-                    objectFit: "contain",
-                    maxWidth: "300px",
+                    width: "300px",
+                    height: "300px",
+                    objectFit: "cover",
+                    borderRadius: "50%",
                   }}
                 />
                 <div
@@ -90,7 +92,7 @@ function Home() {
                     width: "5px",
                     height: "300px",
                     backgroundColor: "rgb(109, 104, 104)",
-                    marginLeft: "20px",
+                    marginLeft: "10%",
                     borderRadius: "5px",
                   }}
                 ></div>
@@ -121,12 +123,13 @@ function Home() {
             <div class="card border-none bg-black text-white">
               <img
                 src={card2}
-                class="card-img-top img-fluid rounded-3"
+                className="card-img-top img-fluid"
                 alt="img"
                 style={{
-                  maxHeight: "300px",
+                  width: "300px",
+                  height: "300px",
                   objectFit: "cover",
-                  maxWidth: "300px",
+                  borderRadius: "50%",
                 }}
               />
               <div class="card-body">
@@ -160,18 +163,19 @@ function Home() {
                     width: "5px",
                     height: "300px",
                     backgroundColor: "rgb(109, 104, 104)",
-                    marginRight: "20px",
+                    marginRight: "10%",
                     borderRadius: "5px",
                   }}
                 ></div>
                 <img
                   src={card3}
-                  className="card-img-top img-fluid rounded-3"
+                  className="card-img-top img-fluid"
                   alt="img"
                   style={{
-                    maxHeight: "300px",
-                    objectFit: "contain",
-                    maxWidth: "300px",
+                    width: "300px",
+                    height: "300px",
+                    objectFit: "cover",
+                    borderRadius: "50%",
                   }}
                 />
               </div>
@@ -436,7 +440,8 @@ function Home() {
           </div>
           <div className="col-12 col-md-3 d-flex justify-content-center align-items-center">
             <button
-              className="btn fw-semibold text-white fs-6" onClick={() => navigate("/foodmenu")}
+              className="btn fw-semibold text-white fs-6"
+              onClick={() => navigate("/foodmenu")}
               style={{
                 backgroundColor: "#33FF00",
                 textShadow: "none",
@@ -501,7 +506,8 @@ function Home() {
           </div>
           <div className="col-12 col-md-3 d-flex justify-content-center align-items-center">
             <button
-              className="btn fw-semibold text-white fs-6" onClick={() => navigate("/foodmenu")}
+              className="btn fw-semibold text-white fs-6"
+              onClick={() => navigate("/foodmenu")}
               style={{
                 backgroundColor: "#33FF00",
                 textShadow: "none",
@@ -524,7 +530,7 @@ function Home() {
               src={home8}
               alt="img"
               className="img-fluid rounded shadow"
-              style={{ maxHeight: "400px", objectFit: "cover"}}
+              style={{ maxHeight: "400px", objectFit: "cover" }}
             />
           </div>
           <div className="col-12 col-md-6 mb-4 text-md-start text-center">
@@ -567,7 +573,8 @@ function Home() {
           </div>
           <div className="col-12 col-md-3 d-flex justify-content-center align-items-center">
             <button
-              className="btn fw-semibold text-white fs-6" onClick={() => navigate("/foodmenu")}
+              className="btn fw-semibold text-white fs-6"
+              onClick={() => navigate("/foodmenu")}
               style={{
                 backgroundColor: "#33FF00",
                 textShadow: "none",

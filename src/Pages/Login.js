@@ -1,7 +1,7 @@
 import React from "react";
 import Logoimage from "../Assets/Image/logo.png";
 import bgimg from "../Assets/Image/bg.png";
-import '../Assets/Css/Login.css'
+import '../Assets/Css/Header.css'
 import { useNavigate } from "react-router-dom";
 
 
@@ -9,7 +9,7 @@ function Login() {
   const navigate = useNavigate();
   return (
 <>
-  <div className="container-fluid px-0">
+  <div className="container-fluid bg-black px-0">
     <div
       className="burgerqueen-container text-white"
       style={{

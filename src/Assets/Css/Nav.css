@@ -6,8 +6,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.navheader
-{
+.navheader {
   position: relative;
   height: 100vh;
   /* background-image: url('../Image/img-2.png'); */
@@ -24,46 +23,35 @@ body {
   padding-bottom: 20px;
 }
 .bg-dark-blur {
-    background-color: rgba(104, 96, 96, 0.6);
-  }
-  
-  /* Nav link pill styling */
-  .nav-pill {
-    color: white;
-    background-color: transparent;
-    border: none;
-    margin: 0 10px;
-    padding: 15px 20px;
-    border-radius: 21px;
-    font-size: 27px;
-    cursor: pointer;
-  }
-
-  /* Hover effect */
-  .nav-pill:hover {
- color:white;
- border-radius: 10px;
- background-color: rgb(41, 38, 38);
- padding: 10px 20px;
+  background-color: rgba(104, 96, 96, 0.6);
+}
+.navlinks {
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  padding: 15px 20px;
+  border-radius: 21px;
+  font-size: 27px;
+  cursor: pointer;
+}
+.navlinks:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(41, 38, 38);
+  padding: 10px 20px;
 }
 
-
-@media(min-width:320px) and (max-width:767px)
-{
-  .nav-pill
-  {
+@media (min-width: 320px) and (max-width: 767px) {
+  .navlinks {
     border-radius: none;
   }
-  .container1
-  {
+  .container1 {
     margin-top: -20%;
   }
 }
-@media(min-width:768px) and (max-width:1023px)
-{
-  .container1
-  {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container1 {
     margin-top: -20%;
   }
 }
-

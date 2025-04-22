@@ -3,7 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
-function Componentshead() {
+function Main() {
   return (
     <div> 
         <Header/>
@@ -13,4 +13,4 @@ function Componentshead() {
   )
 }
 
-export default Componentshead
+export default Main
